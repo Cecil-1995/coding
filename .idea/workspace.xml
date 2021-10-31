@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9788fd98-e30f-4385-8caa-d6048da5c175" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1252. 奇数值单元格的数目.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/240. 搜索二维矩阵 II.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/496. 下一个更大元素 I.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/896. 单调数列.php" afterDir="false" />
-    </list>
+    <list default="true" id="9788fd98-e30f-4385-8caa-d6048da5c175" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +39,7 @@
       <updated>1635171074940</updated>
       <workItem from="1635171079070" duration="2439000" />
       <workItem from="1635258372715" duration="1894000" />
+      <workItem from="1635648450723" duration="408000" />
     </task>
     <servers />
   </component>
