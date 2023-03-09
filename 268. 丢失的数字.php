@@ -10,20 +10,11 @@ class Solution
     function missingNumber($nums)
     {
         $n = count($nums);
+        $res = $n;
 
-        $flag = false;
-        $index = 0;
-        for ($i = 0; $i < $n-1; ++$i) {
-            if ($nums[$index] === $n) {
-                $flag = true;
-                ++$index;
-                continue;
-            }
-            $index = $nums[$index];
-            $nums[$index] = true;
+        for ($i = 0; $i < $n; ++$i) {
+            $res ^= $i ^ $nums[$i];
         }
-
-
-
+        return $res;
     }
 }

@@ -9,13 +9,11 @@ class Solution
      */
     function findDuplicate($nums)
     {
+        $res = count($nums);
         for ($i = 0; $i < count($nums); ++$i) {
-            for ($j = $i+1; $j < count($nums); ++$j) {
-                if ($nums[$i] === $nums[$j]) {
-                    return $nums[$i];
-                }
-
-            }
+            $res ^= ($i+1) ^ $nums[$i];
         }
+
+        return $res;
     }
 }
