@@ -9,13 +9,22 @@ class Solution
      */
     function lengthOfLIS($nums)
     {
-        $n        = count($nums);
-        $dp[0] = 1;
-
-        for ($i = 1; $i < $n; ++$i) {
-            $dp[$i] = $nums[$i] > $nums[$i - 1] ? $dp[$i - 1] + 1 : $dp[$i - 1];
+        $n = count($nums);
+        if ($n === 0) {
+            return 0;
         }
 
-        return $dp[0][$n - 1];
+        for ($i = 0; $i < $n; ++$i) {
+            $dp[$i] = 1;
+        }
+        for ($i = 0; $i < $n; ++$i) {
+            for ($j = 0; $j < $i; ++$j) {
+                if ($nums[$j] < $nums[$i]) {
+                    $dp[$i] = max($dp[$j] + 1, $dp[$i]);
+                }
+            }
+        }
+
+        return max($dp);
     }
 }

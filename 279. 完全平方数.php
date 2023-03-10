@@ -7,7 +7,7 @@ class Solution
      * @param Integer $n
      * @return Integer
      */
-    function NUMSQUARES($n)
+    function numSquares($n)
     {
 
     }

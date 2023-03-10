@@ -2,7 +2,6 @@
 
 class Solution
 {
-
     /**
      * @param Integer[] $nums
      * @return Boolean
@@ -14,27 +13,21 @@ class Solution
             return false;
         }
         $sum = $sum / 2;
+        $n   = count($nums);
 
-        return $this->sub($nums, $sum, 0);
-    }
-
-    function sub($nums, $remain, $start)
-    {
-        if ($remain === 0) {
-            return true;
+        for ($i = 0; $i < $n; ++$i) {
+            $dp[$i][0] = true;
         }
-        if ($remain < 0 || $start === count($nums)) {
-            return false;
+        for ($j = 0; $j < $sum; ++$j) {
+            $dp[0][$j] = false;
         }
 
-        for ($i = $start; $i < count($nums); ++$i) {
-            $remain -= $nums[$i];
-            if ($this->sub($nums, $remain, $i + 1)) {
-                return true;
+        for ($i = 1; $i <= $n; ++$i) {
+            for ($j = 1; $j <= $sum; ++$j) {
+                $dp[$i][$j] = $dp[$i - 1][$j] || $dp[$i - 1][$j - $nums[$i - 1]];
             }
-            $remain += $nums[$i];
         }
 
-        return false;
+        return $dp[$n][$sum];
     }
 }
