@@ -15,42 +15,35 @@
  */
 class Solution
 {
-    public $max = PHP_INT_MIN;
-    public $min = PHP_INT_MAX;
-
     /**
      * @param TreeNode $root
      * @return Boolean
      */
     function isValidBST($root)
     {
-        var_dump($this->max);
-        var_dump($this->min);
-        if (!$root) {
+        return $this->isValid($root, null, null);
+    }
+
+    /**
+     * @param TreeNode $root
+     * @param TreeNode $max
+     * @param TreeNode $min
+     * @return Boolean
+     */
+    function isValid($root, $max, $min)
+    {
+        if ($root == null) {
             return true;
         }
-        if ($root->left) {
-            if (!$this->isValidBST($root->left)) {
-                return false;
-            }
-            $this->max = $root->left->val;
-        }
 
-        if ($root->val <= $this->max) {
+        if ($max != null && $root->val >= $max->val) {
+            return false;
+        }
+        if ($min != null && $root->val <= $min->val) {
             return false;
         }
 
-        if ($root->right) {
-            if (!$this->isValidBST($root->right)) {
-                return false;
-            }
-            $this->min = $root->right->val;
-        }
-
-        if ($root->val >= $this->min) {
-            return false;
-        }
-
-        return true;
+        return $this->isValid($root->left, $root, $min) && $this->isValid($root->right, $max, $root);
     }
+
 }
