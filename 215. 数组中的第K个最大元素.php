@@ -10,6 +10,8 @@ class Solution
      */
     function findKthLargest($nums, $k)
     {
+        rsort($nums);
 
+        return $nums[$k - 1];
     }
 }

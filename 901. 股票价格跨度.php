@@ -3,12 +3,14 @@
 class StockSpanner
 {
     public $stack;
+    public $weight;
 
     /**
      */
     function __construct()
     {
-        $this->stack = [];
+        $this->stack  = [];
+        $this->weight = [];
     }
 
     /**
@@ -17,16 +19,20 @@ class StockSpanner
      */
     function next($price)
     {
-        $result = 1;
-        for ($i = count($this->stack) - 1; $i >= 0; --$i) {
-            if ($this->stack[$i] > $price) {
+        $weight = 1;
+        while (!empty($this->stack)) {
+            $item = array_pop($this->stack);
+            if ($item <= $price) {
+                $weight += array_pop($this->weight);
+            } else {
+                $this->stack[] = $item;
                 break;
             }
-            ++$result;
         }
-        $this->stack[] = $price;
+        $this->stack[]  = $price;
+        $this->weight[] = $weight;
 
-        return $result;
+        return $weight;
     }
 }
 

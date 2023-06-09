@@ -10,25 +10,30 @@ class Solution
      */
     function minReorder($n, $connections)
     {
-        $result  = 0;
+        $ans = 0;
+        $que = [0];
+
+        $map     = [];
         $visited = [];
-        $this->dfs($result, $connections, $visited, 0);
+        foreach ($connections as $i => $connection) {
+            $map[$connection[0]][] = $i;
+            $map[$connection[1]][] = $i;
+        }
 
-        return $result;
-    }
+        while (!empty($que)) {
+            $item = array_shift($que);
+            foreach ($map[$item] as $i) {
+                if (isset($visited[$i])) {
+                    continue;
+                }
+                $visited[$i] = true;
+                $connection  = $connections[$i];
 
-    function dfs(&$result, &$connections, &$visited, $i)
-    {
-        foreach ($connections as $k => $item) {
-            if ($item[0] === $i && !isset($visited[$k])) {
-                ++$result;
-                $connections[$k] = [$item[1], $item[0]];
-                $visited[$k]     = true;
-                $this->dfs($result, $connections, $visited, $item[1]);
-            } elseif ($item[1] === $i && !isset($visited[$k])) {
-                $visited[$k] = true;
-                $this->dfs($result, $connections, $visited, $item[0]);
+                $ans   += $connection[0] == $item;
+                $que[] = $connection[0] == $item ? $connection[1] : $connection[0];
             }
         }
+
+        return $ans;
     }
 }

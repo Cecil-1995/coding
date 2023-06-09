@@ -2,11 +2,15 @@
 
 class Trie
 {
+    private $isEnd;
+    private $next;
+
     /**
      */
     function __construct()
     {
-
+        $this->isEnd = false;
+        $this->next  = [];
     }
 
     /**
@@ -15,7 +19,16 @@ class Trie
      */
     function insert($word)
     {
+        $node = $this;
+        for ($i = 0, $len = strlen($word); $i < $len; ++$i) {
+            if (empty($node->next[$word[$i]])) {
+                $node->next[$word[$i]] = new Trie();
+            }
+            $node = $node->next[$word[$i]];
+        }
+        $node->isEnd = true;
 
+        return null;
     }
 
     /**
@@ -24,7 +37,15 @@ class Trie
      */
     function search($word)
     {
+        $node = $this;
+        for ($i = 0, $len = strlen($word); $i < $len; ++$i) {
+            if (empty($node->next[$word[$i]])) {
+                return false;
+            }
+            $node = $node->next[$word[$i]];
+        }
 
+        return $node->isEnd;
     }
 
     /**
@@ -33,7 +54,15 @@ class Trie
      */
     function startsWith($prefix)
     {
+        $node = $this;
+        for ($i = 0, $len = strlen($prefix); $i < $len; ++$i) {
+            if (empty($node->next[$prefix[$i]])) {
+                return false;
+            }
+            $node = $node->next[$prefix[$i]];
+        }
 
+        return true;
     }
 }
 
