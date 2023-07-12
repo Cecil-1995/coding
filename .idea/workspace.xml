@@ -2,16 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9788fd98-e30f-4385-8caa-d6048da5c175" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1268. 搜索推荐系统.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2542. 最大子序列的分数.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/790. 多米诺和托米诺平铺.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1475. 商品折扣后的最终价格.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/155. 最小栈.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16. 最接近的三数之和.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1911. 最大子序列交替和.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2178. 拆分成最多数目的正偶数之和.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/224. 基本计算器.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24. 两两交换链表中的节点.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2600. K 件物品的最大和.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/264. 丑数 II.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2699. 修改图中的边权.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/32. 最长有效括号.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/349. 两个数组的交集.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/373. 查找和最小的 K 对数字.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/409. 最长回文串.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/485. 最大连续 1 的个数.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/84. 柱状图中最大的矩形.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/92. 反转链表 II.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/二叉树的序列化与反序列化.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1466. 重新规划路线.php" beforeDir="false" afterPath="$PROJECT_DIR$/1466. 重新规划路线.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/208. 实现 Trie (前缀树).php" beforeDir="false" afterPath="$PROJECT_DIR$/208. 实现 Trie (前缀树).php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/215. 数组中的第K个最大元素.php" beforeDir="false" afterPath="$PROJECT_DIR$/215. 数组中的第K个最大元素.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/399. 除法求值.php" beforeDir="false" afterPath="$PROJECT_DIR$/399. 除法求值.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/875. 爱吃香蕉的珂珂.php" beforeDir="false" afterPath="$PROJECT_DIR$/875. 爱吃香蕉的珂珂.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/901. 股票价格跨度.php" beforeDir="false" afterPath="$PROJECT_DIR$/901. 股票价格跨度.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/219. 存在重复元素 II.php" beforeDir="false" afterPath="$PROJECT_DIR$/219. 存在重复元素 II.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2544. 交替数字和.php" beforeDir="false" afterPath="$PROJECT_DIR$/2544. 交替数字和.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +82,9 @@
       <workItem from="1680829590678" duration="17534000" />
       <workItem from="1683789025988" duration="40912000" />
       <workItem from="1684464161446" duration="21401000" />
-      <workItem from="1685413575234" duration="68978000" />
+      <workItem from="1685413575234" duration="74173000" />
+      <workItem from="1687765089100" duration="573000" />
+      <workItem from="1687775323905" duration="39797000" />
     </task>
     <servers />
   </component>

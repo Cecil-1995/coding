@@ -9,18 +9,24 @@ class Solution
      */
     function alternateDigitSum($n)
     {
-        $result = 0;
-        if ($n % 2) {
-            $flag = false;
-        } else {
-            $flag = true;
-        }
+        $a    = 0;
+        $b    = 0;
+        $flag = true;
         while ($n != 0) {
-            $result += ($flag ? -1 : 1) * ($n % 10);
-            $flag   = !$flag;
-            $n      = floor($n / 10);
+            if ($flag) {
+                $a += $n % 10;
+            } else {
+                $b += $n % 10;
+            }
+
+            $n    = floor($n / 10);
+            $flag = !$flag;
         }
 
-        return $result;
+        if ($flag) {
+            return $b - $a;
+        } else {
+            return $a - $b;
+        }
     }
 }

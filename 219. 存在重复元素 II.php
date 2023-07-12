@@ -8,26 +8,42 @@ class Solution
      * @param Integer $k
      * @return Boolean
      */
-    function containsNearbyDuplicate($nums, $k)
+    function containsNearbyDuplicate2($nums, $k)
     {
-        $n = count($nums);
-        if ($n < 2 || $k == 0) {
-            return false;
+        $map = [];
+        foreach ($nums as $kk => $v) {
+            $map[$v][] = $kk;
         }
-        $start = 0;
-        $end   = 1;
 
-        while ($start != $n && $end != $n) {
-            while ($end - $start > $k) {
-                ++$start;
-                if ($nums[$start] == $nums[$end] && $start != $end) {
+        foreach ($map as $items) {
+            $before = $items[0];
+            for ($i = 1; $i < count($items); ++$i) {
+                if (abs($before - $items[$i]) <= $k) {
                     return true;
                 }
+                $before = $items[$i];
             }
-            ++$end;
-            if ($nums[$start] == $nums[$end] && $start != $end) {
+        }
+
+        return false;
+    }
+
+    /**
+     * @param Integer[] $nums
+     * @param Integer $k
+     * @return Boolean
+     */
+    function containsNearbyDuplicate($nums, $k)
+    {
+        $windows = [];
+        foreach ($nums as $i => $num) {
+            if (count($windows) > $k) {
+                array_shift($windows);
+            }
+            if (in_array($num, $windows)) {
                 return true;
             }
+            $windows[] = $num;
         }
 
         return false;
