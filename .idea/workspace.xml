@@ -2,19 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9788fd98-e30f-4385-8caa-d6048da5c175" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1025. 除数博弈.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1124. 表现良好的最长时间段.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1248. 统计「优美子数组」.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/304. 二维区域和检索 - 矩阵不可变.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/319. 灯泡开关.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/455. 分发饼干.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/680. 验证回文串 II.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/80. 删除有序数组中的重复项 II.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/860. 柠檬水找零.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/931. 下降路径最小和.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/135. 分发糖果.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/137. 只出现一次的数字 II.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/167. 两数之和 II - 输入有序数组.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1695. 删除子数组的最大得分.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1851. 包含每个查询的最小区间.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/189. 轮转数组.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/209. 长度最小的子数组.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/239. 滑动窗口最大值.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/278. 第一个错误的版本.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/367. 有效的完全平方数.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/402. 移掉 K 位数字.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/43. 字符串相乘.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/567. 字符串的排列.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/704. 二分查找.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/74. 搜索二维矩阵.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/76. 最小覆盖子串.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/81. 搜索旋转排序数组 II.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/881. 救生艇.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/979. 在二叉树中分配硬币.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/122. 买卖股票的最佳时机 II.php" beforeDir="false" afterPath="$PROJECT_DIR$/122. 买卖股票的最佳时机 II.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/303. 区域和检索 - 数组不可变.php" beforeDir="false" afterPath="$PROJECT_DIR$/303. 区域和检索 - 数组不可变.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18. 四数之和.php" beforeDir="false" afterPath="$PROJECT_DIR$/18. 四数之和.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/680. 验证回文串 II.php" beforeDir="false" afterPath="$PROJECT_DIR$/680. 验证回文串 II.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +86,7 @@
       <workItem from="1685413575234" duration="74173000" />
       <workItem from="1687765089100" duration="573000" />
       <workItem from="1687775323905" duration="54418000" />
-      <workItem from="1689227402643" duration="2291000" />
+      <workItem from="1689227402643" duration="35746000" />
     </task>
     <servers />
   </component>
