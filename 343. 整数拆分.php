@@ -4,12 +4,11 @@ class Solution
 {
 
     /**
-     * @param Integer[] $nums
+     * @param Integer $n
      * @return Integer
      */
-    function singleNumber($nums)
+    function integerBreak($n)
     {
-
 
     }
 }
