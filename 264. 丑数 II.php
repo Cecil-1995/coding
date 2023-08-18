@@ -9,30 +9,24 @@ class Solution
      */
     function nthUglyNumber($n)
     {
-        $link1 = 2;
-        $link2 = 3;
-        $link3 = 5;
-
-        $index = 1;
-        $dp[0] = 1;
-        while ($index < $n) {
-            $min = min($link1, $link2, $link3);
-
+        $p1    = $p2 = $p3 = 1;
+        $link1 = $link2 = $link3 = 1;
+        $p     = 1;
+        $dp    = [];
+        while ($p <= $n) {
+            $min      = min($link1, $link2, $link3);
+            $dp[$p++] = $min;
             if ($min === $link1) {
-                $dp[$index++] = $link1;
-                $link1        *= 2;
+                $link1 = $dp[$p1++] * 2;
             }
             if ($min === $link2) {
-                $dp[$index++] = $link2;
-                $link2        *= 3;
+                $link2 = $dp[$p2++] * 3;
             }
             if ($min === $link3) {
-                $dp[$index++] = $link3;
-                $link3        *= 5;
+                $link3 = $dp[$p3++] * 5;
             }
         }
-        var_dump($dp);
 
-        return $dp[$n - 1];
+        return $dp[$n];
     }
 }
