@@ -21,21 +21,28 @@ class Solution
      */
     function copyRandomList($head)
     {
-        $map = [];
-
-        for ($p = $head; $p !== null; $p = $p->next) {
-            $map[serialize($p)] = new Node($p->val);
+        $map   = [];
+        $nodes = $head;
+        while ($nodes) {
+            $map[serialize($nodes)] = new ListNode($nodes->value);
+            $nodes                  = $nodes->next;
         }
 
-        for ($p = $head; $p !== null; $p = $p->next) {
-            if ($p->next) {
-                $map[serialize($p)]->next = $map[serialize($p->next)];
+        $pre = new ListNode(0);
+        $cur = $pre;
+        while ($head) {
+            $node = $map[serialize($head)];
+            if ($head->next) {
+                $node->next = $map[serialize($head->next)];
             }
-            if ($p->random) {
-                $map[serialize($p)]->random = $map[serialize($p->random)];
+            if ($head->random) {
+                $node->random = $map[serialize($head->random)];
             }
+            $cur->next = $node;
+            $cur       = $cur->next;
+            $head      = $head->next;
         }
 
-        return $map[serialize($head)];
+        return $pre->next;
     }
 }

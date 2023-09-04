@@ -1,15 +1,26 @@
 <?php
 
+class MinSplPriorityQueue extends SplPriorityQueue
+{
+    function compare($priority1, $priority2)
+    {
+        return $priority2 - $priority1;
+    }
+}
+
 class MedianFinder
 {
-    public $list  = [];
-    public $count = 0;
+    public $maxQueue;
+    public $minQueue;
+    public $count;
 
     /**
      */
     function __construct()
     {
-
+        $this->maxQueue = new SplPriorityQueue();
+        $this->minQueue = new MinSplPriorityQueue();
+        $this->count    = 0;
     }
 
     /**
@@ -18,32 +29,26 @@ class MedianFinder
      */
     function addNum($num)
     {
-        $left  = 0;
-        $right = $this->count - 1;
-
-        while ($left <= $right) {
-            $mid = floor(($right - $left) / 2) + $left;
-            if ($this->list[$mid] > $num) {
-                $right = $mid - 1;
-            } elseif ($this->list[$mid] < $num) {
-                $left = $mid + 1;
+        if ($this->count % 2 === 0) {
+            // 目前是偶数，放在max中
+            if ($this->minQueue->isEmpty()) {
+                $this->maxQueue->insert($num, $num);
             } else {
-                $left = $mid + 1;
+                if ($this->minQueue->top() >= $num) {
+                    $this->maxQueue->insert($num, $num);
+                } else {
+                    $this->maxQueue->insert($this->minQueue->top(), $this->minQueue->extract());
+                    $this->minQueue->insert($num, $num);
+                }
             }
-        }
-
-        if ($right === -1) {
-            // 在最前面插入
-            array_unshift($this->list, $num);
-        } elseif ($left === $this->count) {
-            // 在最后面插入
-            $this->list[] = $num;
         } else {
-            // 在right后面插入
-            for ($i = $this->count; $i > $right + 1; --$i) {
-                $this->list[$i] = $this->list[$i - 1];
+            // 目前是奇数，放在min中
+            if ($this->maxQueue->top() <= $num) {
+                $this->minQueue->insert($num, $num);
+            } else {
+                $this->minQueue->insert($this->maxQueue->top(), $this->maxQueue->extract());
+                $this->maxQueue->insert($num, $num);
             }
-            $this->list[$right + 1] = $num;
         }
 
         ++$this->count;
@@ -56,12 +61,10 @@ class MedianFinder
      */
     function findMedian()
     {
-        if ($this->count % 2) {
-            return $this->list[floor($this->count / 2)];
+        if ($this->count % 2 === 0) {
+            return $this->minQueue->top() / 2 + $this->maxQueue->top() / 2;
         } else {
-            $mid = $this->count / 2;
-
-            return $this->list[$mid] / 2 + $this->list[$mid - 1] / 2;
+            return $this->maxQueue->top();
         }
     }
 }
