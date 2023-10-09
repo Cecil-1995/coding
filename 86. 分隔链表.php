@@ -25,34 +25,25 @@ class Solution
             return null;
         }
 
-        $pre = new ListNode(0, $head);
+        $smallPre = new ListNode();
+        $small    = $smallPre;
+        $bigPre   = new ListNode();
+        $big      = $bigPre;
 
         while ($head) {
-            if ($head->val >= $x) {
-
-            }
-        }
-
-
-
-
-        $slow = $pre;
-        $last = $pre;
-        while ($head) {
-            if ($head->val >= $x) {
-                // 当前节点大于等于x,不需要修改
-                $last = $head;
-                $head = $head->next;
+            $item       = $head;
+            $head       = $head->next;
+            $item->next = null;
+            if ($item->val < $x) {
+                $small->next = $item;
+                $small       = $small->next;
             } else {
-                // 当前节点小于x,移到slow节点去
-                $next       = $head->next;
-                $last->next = $next;
-                $head->next = $slow->next;
-                $slow->next = $head;
-                $head       = $next;
+                $big->next = $item;
+                $big       = $big->next;
             }
         }
+        $small->next = $bigPre->next;
 
-        return $pre->next;
+        return $smallPre->next;
     }
 }
