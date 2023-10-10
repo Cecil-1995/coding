@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9788fd98-e30f-4385-8caa-d6048da5c175" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/124. 二叉树中的最大路径和.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/127. 单词接龙.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/149. 直线上最多的点数.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/172. 阶乘后的零.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/212. 单词搜索 II .php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/25. K 个一组翻转链表.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/30. 串联所有单词的子串.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/502. IPO.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/68. 文本左右对齐.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/86. 分隔链表.php" beforeDir="false" afterPath="$PROJECT_DIR$/86. 分隔链表.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/124. 二叉树中的最大路径和.php" beforeDir="false" afterPath="$PROJECT_DIR$/124. 二叉树中的最大路径和.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25. K 个一组翻转链表.php" beforeDir="false" afterPath="$PROJECT_DIR$/25. K 个一组翻转链表.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/909. 蛇梯棋.php" beforeDir="false" afterPath="$PROJECT_DIR$/909. 蛇梯棋.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +79,7 @@
       <workItem from="1689227402643" duration="36747000" />
       <workItem from="1689833778201" duration="169928000" />
       <workItem from="1693295413126" duration="51782000" />
-      <workItem from="1696649566420" duration="518000" />
+      <workItem from="1696649566420" duration="10434000" />
     </task>
     <servers />
   </component>

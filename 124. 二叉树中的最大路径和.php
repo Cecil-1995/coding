@@ -22,6 +22,27 @@ class Solution
      */
     function maxPathSum($root)
     {
+        $max = PHP_INT_MIN;
+        $this->dfs($root, $max);
 
+        return $max;
+    }
+
+    /**
+     * @param TreeNode $root
+     * @return Integer
+     */
+    function dfs($root, &$max)
+    {
+        if (!$root) {
+            return 0;
+        }
+
+        $left  = $this->dfs($root->left, $max);
+        $right = $this->dfs($root->right, $max);
+
+        $max = max($max, $left + $right + $root->val);
+
+        return $root->val + max($left, $right) > 0 ? $root->val + max($left, $right) : 0;
     }
 }

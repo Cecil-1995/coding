@@ -21,35 +21,50 @@ class Solution
      */
     function reverseKGroup($head, $k)
     {
-        $pre = new ListNode(0, $head);
+        $pre = new ListNode();
+        $ans = $pre;
 
-        $start = $pre;
-        $end   = $pre;
+        $nodes = $head;
         $i     = 0;
-        while ($head) {
-            $end  = $head;
-            $head = $head->next;
-            ++$i;
-            if ($i === $k) {
+        while ($nodes) {
+            if (++$i === $k) {
                 // 翻转
-                $this->reverse();
-                $start = $end;
+                $i    = 0;
+                $next = $nodes->next;
+
+                $nodes->next = null;
+                $pre->next   = $this->reverse($head);
+                while ($pre->next) {
+                    $pre = $pre->next;
+                }
+
+                $head  = $next;
+                $nodes = $next;
+            } else {
+                $nodes = $nodes->next;
             }
         }
+        if ($head) {
+            $pre->next = $head;
+        }
 
-        return $pre->next;
+        return $ans->next;
     }
 
     function reverse($head)
     {
         $pre = new ListNode(0, $head);
-        $last = $pre;
-        while ($head && $head->next) {
-            $next = $head->next->next;
-            $head->next->next = $head;
-            $head->next = $next;
 
+        $last = $head;
+        $head = $head->next;
+        while ($head) {
+            $next = $head->next;
 
+            $head->next = $pre->next;
+            $pre->next  = $head;
+            $last->next = $next;
+
+            $head = $next;
         }
 
         return $pre->next;
