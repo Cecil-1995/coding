@@ -24,7 +24,7 @@ class Solution
             return [];
         }
 
-        return $this->order;
+        return array_reverse($this->order);
     }
 
     function buildGraph($prerequisites)
@@ -32,7 +32,7 @@ class Solution
         $graph = [];
 
         foreach ($prerequisites as $prerequisite) {
-            $graph[$prerequisite[0]][] = $prerequisite[1];
+            $graph[$prerequisite[1]][] = $prerequisite[0];
         }
 
         return $graph;
