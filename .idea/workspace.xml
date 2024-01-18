@@ -1,10 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9788fd98-e30f-4385-8caa-d6048da5c175" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/41. 缺失的第一个正数.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/763. 划分字母区间.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 01.07. 旋转矩阵.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 01.08. 零矩阵.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 01.09. 字符串轮转.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 02.01. 移除重复节点.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 02.04. 分割链表.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 02.05. 链表求和.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 02.07. 链表相交.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 02.08. 环路检测.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 03.01. 三合一.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 03.02. 栈的最小值.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 03.03. 堆盘子.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 03.04. 化栈为队.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 03.05. 栈排序.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 03.06. 动物收容所.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 04.01. 节点间通路.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 04.02. 最小高度树.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 04.03. 特定深度节点链表.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 04.04. 检查平衡性.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 04.05. 合法二叉搜索树.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 04.06. 后继者.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 04.06. 后继者.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 04.08. 首个共同祖先.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 04.08. 首个共同祖先.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 04.09. 二叉搜索树序列.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 04.10. 检查子树.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 04.12. 求和路径.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 05.01. 插入.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 05.02. 二进制数转字符串.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 05.03. 翻转数位.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 05.04. 下一个数.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 05.06. 整数转换.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 05.07. 配对交换.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 05.08. 绘制直线.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.01. 三步问题.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.02. 迷路的机器人.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.03. 魔术索引.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.04. 幂集.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.05. 递归乘法.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.06. 汉诺塔问题.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.07. 无重复字符串的排列组合.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.08. 有重复字符串的排列组合.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.09. 括号.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.10. 颜色填充.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.11. 硬币.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.12. 八皇后.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.13. 堆箱子.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 08.14. 布尔运算.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 10.01. 合并排序的数组.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 10.02. 变位词组.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 10.03. 搜索旋转数组.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 10.05. 稀疏数组搜索.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 10.09. 排序矩阵查找.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 10.10. 数字流的秩.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 10.11. 峰与谷.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.01. 交换数字.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.02. 单词频率.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.03. 交点.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.04. 井字游戏.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.05. 阶乘尾数.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.06. 最小差.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.07. 最大数值.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.08. 整数的英语表示.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.09. 运算.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.10. 生存人数.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.11. 跳水板.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.13. 平分正方形.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.14. 最佳直线.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.15. 珠玑妙算.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.16. 部分排序.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.17. 连续数列.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.18. 模式匹配.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.19. 水域大小.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.20. T9键盘.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.21. 交换和.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.24. 数对和.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.25. LRU 缓存.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 16.26. 计算器.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.01. 不用加号的加法.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.04. 消失的数字.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.05. 字母与数字.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.06. 2出现的次数.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.07. 婴儿名字.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.08. 马戏团人塔.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.09. 第 k 个数.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.10. 主要元素.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.11. 单词距离.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.12. BiNode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.13. 恢复空格.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.14. 最小K个数.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.15. 最长单词.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.16. 按摩师.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.17. 多次搜索.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.18. 最短超串.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.19. 消失的两个数字.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.20. 连续中值.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.21. 直方图的水量.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.22. 单词转换.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.23. 最大黑方阵.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.24. 最大子矩阵.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.25. 单词矩阵.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题 17.26. 稀疏相似度.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/coding.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/173. 二叉搜索树迭代器.php" beforeDir="false" afterPath="$PROJECT_DIR$/173. 二叉搜索树迭代器.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/210. 课程表 II.php" beforeDir="false" afterPath="$PROJECT_DIR$/210. 课程表 II.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/137. 只出现一次的数字 II.php" beforeDir="false" afterPath="$PROJECT_DIR$/137. 只出现一次的数字 II.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/138. 复制带随机指针的链表.go" beforeDir="false" afterPath="$PROJECT_DIR$/138. 复制带随机指针的链表.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/138. 复制带随机指针的链表.php" beforeDir="false" afterPath="$PROJECT_DIR$/138. 复制带随机指针的链表.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/212. 单词搜索 II .php" beforeDir="false" afterPath="$PROJECT_DIR$/212. 单词搜索 II .php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/287. 寻找重复数.php" beforeDir="false" afterPath="$PROJECT_DIR$/287. 寻找重复数.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/面试题 02.06. 回文链表.php" beforeDir="false" afterPath="$PROJECT_DIR$/面试题 02.06. 回文链表.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +125,7 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -26,12 +138,15 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/222. 完全二叉树的节点个数.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/63. 不同路径 II.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/530. 二叉搜索树的最小绝对差.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/120. 三角形最小路径和.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/93. 复原 IP 地址.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/343. 整数拆分.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/63. 不同路径 II.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/222. 完全二叉树的节点个数.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/530. 二叉搜索树的最小绝对差.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/120. 三角形最小路径和.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="200ALJLnst1L2rG3TJEoryIzvWO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,6 +160,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -78,7 +199,15 @@
       <workItem from="1689227402643" duration="36747000" />
       <workItem from="1689833778201" duration="169928000" />
       <workItem from="1693295413126" duration="51782000" />
-      <workItem from="1696649566420" duration="18780000" />
+      <workItem from="1696649566420" duration="227110000" />
+      <workItem from="1703656931863" duration="515000" />
+      <workItem from="1703834483288" duration="528000" />
+      <workItem from="1704159619189" duration="599000" />
+      <workItem from="1704160730253" duration="318000" />
+      <workItem from="1704161164733" duration="517000" />
+      <workItem from="1704162551515" duration="580000" />
+      <workItem from="1704867846360" duration="15078000" />
+      <workItem from="1705391914285" duration="20799000" />
     </task>
     <servers />
   </component>

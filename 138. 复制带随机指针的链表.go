@@ -7,8 +7,25 @@
  * }
  */
 
+var cacheNode map[*Node]*Node
 func copyRandomList(head *Node) *Node {
-    var cacheNode map[*Node]*Node
+    cacheNode = map[*Node]*Node{}
+    return deepCopy(head)
+}
 
-    while
+func deepCopy(head *Node) *Node {
+    if head == nil {
+        return nil
+    }
+
+    if n, has := cacheNode[head]; has {
+        return n
+    }
+
+    newNode := &Node{Val:head.Val}
+    cacheNode[head] = newNode
+    newNode.Next = deepCopy(head.Next)
+    newNode.Random = deepCopy(head.Random)
+
+    return newNode
 }

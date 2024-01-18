@@ -13,6 +13,20 @@
  * }
  */
 
+class Node
+{
+    public $val    = null;
+    public $next   = null;
+    public $random = null;
+
+    function __construct($val = 0)
+    {
+        $this->val    = $val;
+        $this->next   = null;
+        $this->random = null;
+    }
+}
+
 class Solution
 {
     /**
@@ -24,11 +38,11 @@ class Solution
         $map   = [];
         $nodes = $head;
         while ($nodes) {
-            $map[serialize($nodes)] = new ListNode($nodes->value);
+            $map[serialize($nodes)] = new Node($nodes->val);
             $nodes                  = $nodes->next;
         }
 
-        $pre = new ListNode(0);
+        $pre = new Node(0);
         $cur = $pre;
         while ($head) {
             $node = $map[serialize($head)];
@@ -46,3 +60,10 @@ class Solution
         return $pre->next;
     }
 }
+
+$node1         = new Node(7);
+$node2         = new Node(13);
+$node2->random = $node1;
+$node1->next   = $node2;
+
+var_dump((new Solution())->copyRandomList($node1));
